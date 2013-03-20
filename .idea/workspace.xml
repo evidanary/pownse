@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ccc55ae-eb09-4f4f-bea2-159b50709749" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pownse.iml" afterPath="$PROJECT_DIR$/.idea/pownse.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pownse.iws" />
@@ -17,7 +14,7 @@
     <file path="/database.yml" changelist="2ccc55ae-eb09-4f4f-bea2-159b50709749" time="1363765490760" ignored="false" />
     <file path="/routes.rb" changelist="2ccc55ae-eb09-4f4f-bea2-159b50709749" time="1363579010441" ignored="false" />
     <file path="/init_migration.rb" changelist="2ccc55ae-eb09-4f4f-bea2-159b50709749" time="1363583723019" ignored="false" />
-    <file path="/Dummy.txt" changelist="2ccc55ae-eb09-4f4f-bea2-159b50709749" time="1363766321502" ignored="false" />
+    <file path="/Dummy.txt" changelist="2ccc55ae-eb09-4f4f-bea2-159b50709749" time="1363767867937" ignored="false" />
     <file path="/20130318052705_create_users.rb" changelist="2ccc55ae-eb09-4f4f-bea2-159b50709749" time="1363584449113" ignored="false" />
     <file path="/20130318052934_create_commitments.rb" changelist="2ccc55ae-eb09-4f4f-bea2-159b50709749" time="1363584893538" ignored="false" />
     <file path="/index.html.erb" changelist="2ccc55ae-eb09-4f4f-bea2-159b50709749" time="1363586579824" ignored="false" />
@@ -1070,7 +1067,11 @@
       <created>1363766324526</created>
       <updated>1363766324526</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="modifying gitignore&#10;">
+      <created>1363767869840</created>
+      <updated>1363767869840</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
