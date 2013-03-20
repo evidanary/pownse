@@ -1,0 +1,14 @@
+<%= form_for(@commitment) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.text_field :name, placeholder: "Name..." %>
+    <%= f.text_field :wager, placeholder: "Wager..." %>
+
+    <%= f.radio_button :recurring, 'true', :checked => true %>
+    <%= label :recurring, 'Yes' %>
+    <%= f.radio_button :recurring, 'false' %>
+    <%= label :recurring, 'No' %>
+
+  </div>
+  <%= f.submit "Add Commitment", class: "btn btn-large btn-primary" %>
+<% end %>

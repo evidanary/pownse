@@ -1,0 +1,3 @@
+== Pownse
+
+Helping Developers keep their commitments on projects by assigning monetary stakes to completion of tasks

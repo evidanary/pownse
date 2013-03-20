@@ -1,0 +1,15 @@
+<% if current_user?(commitment.user) %>
+    <tr>
+      <td><%= "#{commitment.name}" %></td>
+      <td><%= "#{commitment.wager}" %></td>
+      <td><%= "#{commitment.recurring}" %></td>
+      <!--<td><span class="timestamp">
+    Posted <%= time_ago_in_words(commitment.created_at) %> ago.</span>
+      </td>-->
+      <td>
+        <%= link_to "delete", commitment, method: :delete,
+                    data: { confirm: "You sure?" },
+                    title: commitment.name %>
+      </td>
+    </tr>
+<% end %>
