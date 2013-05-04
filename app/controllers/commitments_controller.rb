@@ -13,7 +13,7 @@ class CommitmentsController < ApplicationController
   end
 
   def destroy
-    @interest.destroy
+    @commitment.destroy
     redirect_to root_url
   end
 

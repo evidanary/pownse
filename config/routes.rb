@@ -1,4 +1,5 @@
 Pownse::Application.routes.draw do
+  resources :checkins, only: [:create]
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   resources :commitments, only: [:create, :destroy]
