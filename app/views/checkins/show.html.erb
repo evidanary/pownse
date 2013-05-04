@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Commitment:</b>
+  <%= @checkin.commitment_id %>
+</p>
+
+<p>
+  <b>Checkin date:</b>
+  <%= @checkin.checkin_date %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @checkin.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_checkin_path(@checkin) %> |
+<%= link_to 'Back', checkins_path %>

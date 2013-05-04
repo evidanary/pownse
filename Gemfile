@@ -8,6 +8,13 @@ gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'pg', '0.12.2'
 
+
+group :development do           #TODO change this to :production
+  gem 'rack-google_analytics', :require => "rack/google_analytics"
+end
+
+
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

@@ -4,6 +4,7 @@
     <%= f.text_field :name, placeholder: "Name..." %>
     <%= f.text_field :wager, placeholder: "Wager..." %>
 
+    <%= label :recurring, 'Recurring' %>
     <%= f.radio_button :recurring, 'true', :checked => true %>
     <%= label :recurring, 'Yes' %>
     <%= f.radio_button :recurring, 'false' %>
