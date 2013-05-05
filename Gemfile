@@ -12,6 +12,7 @@ gem 'delayed_job_active_record'
 
 group :development do           #TODO change this to :production
   gem 'rack-google_analytics', :require => "rack/google_analytics"
+  gem 'sqlite3'
 end
 
 
@@ -20,7 +21,7 @@ end
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
-gem 'sqlite3'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
