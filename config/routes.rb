@@ -1,8 +1,8 @@
 Pownse::Application.routes.draw do
-  resources :checkins, only: [:create]
+  resources :checkins , only: [:new, :create, :destroy, :index]
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
-  resources :commitments, only: [:create, :destroy]
+  resources :commitments, only: [:create, :destroy, :index]
   root :to => "home#index"
   match "/contact", to: "home#contact"
   match "/signup", to: "users#new"

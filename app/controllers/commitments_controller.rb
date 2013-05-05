@@ -2,6 +2,15 @@ class CommitmentsController < ApplicationController
   before_filter :signed_in_user, only: [:create, :destroy]
   before_filter :correct_user, only: :destroy
 
+  def index
+    @commitments = current_user.commitments.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @checkins }
+    end
+  end
+  
   def create
     @commitment = current_user.commitments.build(params[:commitment])
     if @commitment.save

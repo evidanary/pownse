@@ -10,19 +10,31 @@
       </ul>
     </div>
   <% end %>
-
+  <% commitment = Commitment.find(3) %>
   <div class="field">
-    <%= f.label :commitment_id %><br />
-    <%= f.number_field :commitment_id %>
+    <%= f.label commitment.name %><br />
   </div>
   <div class="field">
     <%= f.label :checkin_date %><br />
-    <%= f.datetime_select :checkin_date %>
+    <%= f.date_select :checkin_date %>
   </div>
   <div class="field">
-    <%= f.label :status %><br />
-    <%= f.check_box :status %>
+    <%= f.label "Did you do it?" %>
+    <table>
+    	<tbody>
+    		<tr>
+    			<td><%= f.radio_button :status, '1', :checked => true %></td> 
+				<td><%= f.label :status, 'Yes' %></td>
+		  	</tr>
+    		<tr>
+    			<td><%= f.radio_button :status, '0' %></td> 
+				<td><%= f.label :status, 'No' %></td>
+		  	</tr>
+
+		</tbody>
+  	</table>
   </div>
+  <%= f.hidden_field :commitment_id, :value => commitment.id %> 
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -2,10 +2,13 @@
     <tr>
       <td><%= "#{commitment.name}" %></td>
       <td><%= "#{commitment.wager}" %></td>
-      <td><%= "#{commitment.recurring}" %></td>
+      <td><%= "#{commitment.checkin_date}" %></td>
       <!--<td><span class="timestamp">
     Posted <%= time_ago_in_words(commitment.created_at) %> ago.</span>
       </td>-->
+      <td>
+        <%= link_to "checkin", new_checkin_path(:id => commitment.id) %>
+      </td>
       <td>
         <%= link_to "delete", commitment, method: :delete,
                     data: { confirm: "You sure?" },

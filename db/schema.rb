@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130321071003) do
+ActiveRecord::Schema.define(:version => 20130504214153) do
 
   create_table "checkins", :force => true do |t|
     t.integer  "commitment_id"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20130321071003) do
     t.date     "next_due_date"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+    t.datetime "checkin_date"
   end
 
   add_index "commitments", ["user_id", "created_at"], :name => "index_commitments_on_user_id_and_created_at"
