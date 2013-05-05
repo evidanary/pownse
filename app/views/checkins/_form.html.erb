@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-  <% commitment = Commitment.find(3) %>
+  <% commitment = Commitment.find(params[:id]) %>
   <div class="field">
     <%= f.label commitment.name %><br />
   </div>

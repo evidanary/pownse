@@ -26,16 +26,16 @@ class CheckinsController < ApplicationController
   # POST /checkins.json
   def create
     @checkin = Checkin.new(params[:checkin])
-
-    if @checkin.save
-      flash[:success] = "Checkin created!"
-      redirect_to root_path
-      #redirect_to user_path.concat("/").concat(checkin.commitment.user.id)
-    else
-      #render 'home/index'
-      puts
-    end
- 
+	respond_to do |format|
+		if @checkin.save
+		  format.html { redirect_to(root_path, :notice => 'Checkin was successfully created.') }
+		  #flash[:success] = "Checkin created!"
+		  #redirect_to root_path
+		  #redirect_to user_path.concat("/").concat(checkin.commitment.user.id)
+		else
+		  format.html { redirect_to new_checkin_path(:current), :notice => "Couldn't create Checkin" }
+		end
+	 end
   end
   
   # DELETE /checkins/1
