@@ -1,10 +1,13 @@
 Pownse::Application.routes.draw do
+  postmarkdown :as => :blog
+
   resources :checkins , only: [:new, :create, :destroy, :index]
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   resources :commitments, only: [:create, :destroy, :index]
   root :to => "home#index"
   match "/contact", to: "home#contact"
+  match "/faq", to: "home#faq"
   match "/signup", to: "users#new"
   match "/signin", to: "sessions#new"
   match "/signout", to: "sessions#destroy", via: "delete"

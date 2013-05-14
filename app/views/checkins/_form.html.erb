@@ -15,10 +15,6 @@
     <%= f.label commitment.name %><br />
   </div>
   <div class="field">
-    <%= f.label :checkin_date %><br />
-    <%= f.date_select :checkin_date %>
-  </div>
-  <div class="field">
     <%= f.label "Did you do it?" %>
     <table>
     	<tbody>
@@ -30,7 +26,6 @@
     			<td><%= f.radio_button :status, '0' %></td> 
 				<td><%= f.label :status, 'No' %></td>
 		  	</tr>
-
 		</tbody>
   	</table>
   </div>

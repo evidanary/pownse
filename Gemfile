@@ -8,11 +8,13 @@ gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'pg', '0.12.2'
 gem 'delayed_job_active_record'
+gem 'postmarkdown'
 
 
 group :development do           #TODO change this to :production
   gem 'rack-google_analytics', :require => "rack/google_analytics"
-  gem 'sqlite3'
+  #gem 'sqlite3'
+  gem 'mysql2'
 end
 
 
@@ -20,7 +22,7 @@ end
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+
 
 
 # Gems used only for assets and not required
